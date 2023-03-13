@@ -24,6 +24,7 @@
     <ProjectGuid>{21f55c45-5f37-438d-8da4-6fde3186f697}</ProjectGuid>
     <RootNamespace>Phantulap</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>4_Phan_tu_lap</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

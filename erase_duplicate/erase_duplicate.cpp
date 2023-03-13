@@ -1,40 +1,29 @@
 #include <iostream>
 #include <string>
-#include <algorithm>
+#include <unordered_map>
+
 using namespace std;
 
-string erase_dup(string s);
-
-int main()
-{
-	string s;
-	cin >> s;
-	cout << erase_dup(s);
-	return 0;
+string removeDuplicates(string str) {
+    unordered_map<char, int> char_count;
+    for (char ch : str) {
+        ++char_count[ch];
+    }
+    string kq;
+    for (char ch : str) {
+        if (char_count[ch] == 1) {
+            kq += ch;
+        }
+    }
+    return kq;
 }
 
-string erase_dup(string s)
-{
-	if (s.size() == 1) {
-		return s;
-	}
-	sort(s.begin(), s.end());
-	int i = 0;
-	int dem = 1;
-	while (i < s.size() - 1) {
-		if (s[i] == s[i + 1]) {
-			dem++;
-		}
-		if (s[i] != s[i + 1] && dem >= 2) {
-			s.erase(i - dem + 1, dem);
-			i = i - dem;
-			dem = 1;
-		}
-		++i;
-	}
-	i--;
-	if (s[i] == s[i + 1] && dem >= 2) {
-		s.erase(i - dem + 2, dem);
-	}
-	return s;
+int main() {
+    string str = "nguyenduyle";
+    string result = removeDuplicates(str);
+
+    cout << "Original string: " << str << endl;
+    cout << "String after removing duplicates: " << result << endl;
+
+    return 0;
 }

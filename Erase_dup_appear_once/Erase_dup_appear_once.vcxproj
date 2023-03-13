@@ -24,6 +24,7 @@
     <ProjectGuid>{77ed8c97-9cf5-45c6-8be0-d8fa5961fc43}</ProjectGuid>
     <RootNamespace>Erasedupappearonce</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>C_Erase_dup_appear_once</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

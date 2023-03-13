@@ -24,6 +24,7 @@
     <ProjectGuid>{71397d21-8a71-4c76-8b17-42bdf258161a}</ProjectGuid>
     <RootNamespace>Mostfrequentchar</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>C_Most_frequent_char</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

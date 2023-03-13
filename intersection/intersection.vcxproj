@@ -24,7 +24,7 @@
     <ProjectGuid>{40cbd57b-8ca1-4669-a83c-4285a4f85627}</ProjectGuid>
     <RootNamespace>intersection</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>Intersection</ProjectName>
+    <ProjectName>3_Intersection</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

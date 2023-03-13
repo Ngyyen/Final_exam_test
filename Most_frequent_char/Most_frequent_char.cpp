@@ -4,17 +4,20 @@
 #include <string>
 using namespace std;
 
-void ki_tu_nhieu_nhat(const string&);
+vector<char> ki_tu_nhieu_nhat(const string&);
 
 int main()
 {
 	string s;
 	cin >> s;
-	ki_tu_nhieu_nhat(s);
+	vector<char> vec = ki_tu_nhieu_nhat(s);
+	for (char c : vec) {
+		cout << c << " ";
+	}
 	return 0;
 }
 
-void ki_tu_nhieu_nhat(const string& s)
+vector<char> ki_tu_nhieu_nhat(const string& s)
 {
 	unordered_map<char, int> my_map;
 	for (char c : s) {
@@ -26,9 +29,11 @@ void ki_tu_nhieu_nhat(const string& s)
 			max = pa.second;
 		}
 	}
-	for (auto pa : my_map) {
-		if (pa.second == max) {
-			cout << pa.first;
+	vector<char> vec;
+	for (char c : s) {
+		if (my_map[c] == max && find(vec.begin(), vec.end(), c) == vec.end()) {
+			vec.push_back(c);
 		}
 	}
+	return vec;
 }

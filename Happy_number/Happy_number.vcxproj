@@ -24,6 +24,7 @@
     <ProjectGuid>{bff2f224-c811-451c-99df-64d183d75d50}</ProjectGuid>
     <RootNamespace>Happynumber</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>4_Happy_number</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

@@ -46,7 +46,7 @@ int find_factor(int n)
 }
 bool is_prime(int n)
 {
-	if (n == 1) {
+	if (n <= 1) {
 		return false;
 	}
 	for (long i = 2; i * i <= n; ++i) {
